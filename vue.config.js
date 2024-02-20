@@ -4,5 +4,5 @@ module.exports = defineConfig({
 })
 
 module.exports = {
-  public: 'https://cafeteria-vue-admin.onrender.com'
+  mode: 'production'
 }
