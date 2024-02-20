@@ -4,7 +4,5 @@ module.exports = defineConfig({
 })
 
 module.exports = {
-  devServer: {
-      disableHostCheck: true
-  }
+  public: 'https://cafeteria-vue-admin.onrender.com'
 }
