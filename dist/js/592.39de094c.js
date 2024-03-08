@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkcafeteria_administracion_vue"]=self["webpackChunkcafeteria_administracion_vue"]||[]).push([[592],{592:function(n,e,r){r.r(e),r.d(e,{default:function(){return o}});var a=r(4108);function t(n,e,r,t,i,c){const u=(0,a.E1)("NavBar"),o=(0,a.E1)("router-view");return(0,a.Wz)(),(0,a.An)("div",null,[(0,a.K2)(u),(0,a.K2)(o)])}var i={components:{NavBar:(0,a.Mn)((()=>r.e(256).then(r.bind(r,1256))))}},c=r(4100);const u=(0,c.c)(i,[["render",t]]);var o=u}}]);
+//# sourceMappingURL=592.39de094c.js.map
