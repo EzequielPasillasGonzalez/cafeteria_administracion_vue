@@ -17,6 +17,11 @@ export default {
                 }
             }
         },
+        {
+            path: '/blockchain/',
+            name: 'blockchain',    
+            component: () => import(/* webpackChunckName: "blockchaine" */ '@/modules/administrador/views/BlockchainView.vue'),            
+        },
     ]
 }
 

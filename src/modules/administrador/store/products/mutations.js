@@ -51,3 +51,8 @@ export const deleteProducts = (state, uID) => {
     
 
 }
+
+
+export const addblockchain = (state, blockchain) => {
+    state.blockchain = blockchain    
+}

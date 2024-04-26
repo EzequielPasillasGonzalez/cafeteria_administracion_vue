@@ -127,5 +127,7 @@ export const deleteProducts = async ({ commit }, uID) => {
 export const verifyIntegrytiPedidos = async ({commit}) => {
     const objTotalPedidos = await cafeteriaOrderApi.get("/order.json")
 
-    checkIntegrity(objTotalPedidos.data)
+    const dataIntegryti = await checkIntegrity(objTotalPedidos.data)
+
+    commit( 'addblockchain',dataIntegryti)
 }

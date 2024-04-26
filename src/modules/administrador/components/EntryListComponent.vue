@@ -50,8 +50,10 @@ export default {
             'verifyIntegrytiPedidos'
         ]),
 
-        verficaPedidos(){
-            this.verifyIntegrytiPedidos()
+        async verficaPedidos(){
+            const dataIntegrity = await this.verifyIntegrytiPedidos()
+            // console.log(dataIntegrity);
+            await this.$router.push({ name: 'blockchain', params: { id: dataIntegrity } })
         }
     },
     data(){
@@ -73,8 +75,7 @@ input{
     }
 
     .entry-scrollarea{
-        height: calc(100vh - 110px);
-        overflow-y: scroll;
-        
+        // height: 100%;
+        overflow-y: scroll;        
     }
 </style>
