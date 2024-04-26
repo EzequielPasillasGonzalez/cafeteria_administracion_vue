@@ -1,4 +1,7 @@
+import cafeteriaOrderApi from "@/api/apiOrderCafeteria"
 import cafeteriaApi from "@/api/cafeteriaApi"
+import { checkIntegrity } from "@/scripts/blokchain"
+
 
 // export const myAction = async ({comit}) => {
 
@@ -119,4 +122,10 @@ export const deleteProducts = async ({ commit }, uID) => {
     
 
     
+}
+
+export const verifyIntegrytiPedidos = async ({commit}) => {
+    const objTotalPedidos = await cafeteriaOrderApi.get("/order.json")
+
+    checkIntegrity(objTotalPedidos.data)
 }
