@@ -15,17 +15,17 @@ export const setProducts = (state, products) => {
 
 export const updateProducts = (state, product) => { // Recibir la entrada actualizada
 
-    console.log(product);
+    
 
     // state.products => es un arreglo, buscar la entrada con el mismo ID
     const idx = state.products.map( e => e.uID).indexOf(product.uID) //? Se crea un unevo arreglo con todos los ID del state
 
-    console.log(idx);
+    
     
     // state.products => ...entry
     state.products[idx] = product //? se asigna el valor nuevo
 
-    console.log(state.products[idx]);
+    
     
 
 }

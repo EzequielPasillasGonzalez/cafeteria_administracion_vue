@@ -3,6 +3,4 @@ module.exports = defineConfig({
     transpileDependencies: true
 })
 
-// module.exports = {
-//   mode: 'production'
-// }
+

@@ -58,13 +58,13 @@ export const postUser = async ( { commit },  user) => {
 
         const role = "User_role"
 
-        console.log(user.correo);
+        //console.log(user.correo);
         
         const { data } = await authApi.post("/api/user", {nombre: user.nombre, correo: user.correo, password: user.password, role: role}) //? Le hace un peticion get al api
 
         const { ok } = data
 
-        console.log(commit);
+        //console.log(commit);
         
 
         

@@ -83,7 +83,7 @@ export default {
             this.user.correo = this.correo;
             this.user.password = this.password;
 
-            console.log(this.user);
+            //console.log(this.user);
 
             const ok = await this.getLogin(this.user);
 
